@@ -1,11 +1,12 @@
 import React from 'react';
+import { ImagePixelated } from "react-pixelate";
 import './App.css';
 
-function App({ imgSrc }: { imgSrc: string }) {
+function App({ imgSrc, pixelSize = 10 }: { imgSrc: string, pixelSize?: number }) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={imgSrc} className="App-logo" alt="logo" />
+        <ImagePixelated src={imgSrc} pixelSize={pixelSize} />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

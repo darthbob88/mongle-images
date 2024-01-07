@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App imgSrc={"https://upload.wikimedia.org/wikipedia/commons/1/1e/Fritz_Haber.png"} />
+    <App imgSrc={"https://upload.wikimedia.org/wikipedia/commons/1/1e/Fritz_Haber.png"} pixelSize={5} />
   </React.StrictMode>
 );
 
