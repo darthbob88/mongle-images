@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 
 test('renders learn react link', () => {
-  render(<App imgSrc="https://upload.wikimedia.org/wikipedia/commons/1/1e/Fritz_Haber.png" />);
-  const linkElement = screen.getByText(/learn react/i);
+  render(<App />);
+  const linkElement = screen.getByText(/Pixel size/i);
   expect(linkElement).toBeInTheDocument();
 });
