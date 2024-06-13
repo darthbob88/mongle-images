@@ -11,7 +11,7 @@ function SingleImage({ pixelSize }: SingleImageProps) {
     const [imgSrc, setImgSrc] = useState<string>('https://upload.wikimedia.org/wikipedia/commons/1/1e/Fritz_Haber.png');
 
     return (
-        <div style={{ border: "1px solid red", width: "60vw", margin: "0 auto" }}>
+        <div style={{ width: "60vw", margin: "0 auto" }}>
             <label>Image source:   <input type='text' value={imgSrc} onChange={(evt) => setImgSrc(evt.currentTarget.value)} /></label>
             <p>{errorText}</p>
             <br />
